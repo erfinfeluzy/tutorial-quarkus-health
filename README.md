@@ -5,11 +5,20 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
 ## Clone or Generate new quarkus project
+
+Generate new project
 ```bash
 $ mvn io.quarkus:quarkus-maven-plugin:1.5.2.Final:create \
 -DprojectGroupId=com.erfinfeluzy \
 -DprojectArtifactId=tutorial-quarkus-health \
 -Dextensions="health,resteasy-jackson"
+```
+> Note: health extension will automatically generate health check for readiness probe (/health/ready) and liveness probe (/health/live), 
+> resteasy-jackson extension is used for creating json rest services.
+
+Or clone for my github:
+```
+git clone https://github.com/erfinfeluzy/tutorial-quarkus-health.git
 ```
 
 ## Running the application in dev mode

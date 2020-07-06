@@ -4,6 +4,14 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+## Clone or Generate new quarkus project
+```bash
+$ mvn io.quarkus:quarkus-maven-plugin:1.5.2.Final:create \
+-DprojectGroupId=com.erfinfeluzy \
+-DprojectArtifactId=tutorial-quarkus-health \
+-Dextensions="health,resteasy-jackson"
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
